@@ -3,6 +3,10 @@ import { ArrowRight, CheckCircle, Star, TrendingDown, Shield, Clock, Award, MapP
 import titaniumImg from './assets/titanium.jpg';
 import clinicImg from './assets/clinic_interior.jpg';
 import usOfficeImg from './assets/us_office.jpg';
+import qualityImg from './assets/quality.jpg';
+import valueImg from './assets/value.jpg';
+import supportImg from './assets/support.jpg';
+import luxuryImg from './assets/luxury.jpg';
 
 const EsvitaLanding = () => {
 
@@ -59,10 +63,10 @@ const EsvitaLanding = () => {
   ];
 
   const whyTurkey = [
-    { icon: '🏆', title: 'World-Class Quality', desc: 'Turkey is the #2 medical tourism destination with ISO-certified facilities' },
-    { icon: '💰', title: 'Unbeatable Value', desc: '82% lower costs than US while maintaining premium standards' },
-    { icon: '🇺🇸', title: 'US-Based Support', desc: 'Meet our team in the USA for consultations and follow-ups' },
-    { icon: '✈️', title: 'Luxury Experience', desc: '5-star hotel and VIP transfers included in package' }
+    { image: qualityImg, title: 'World-Class Quality', desc: 'Turkey is the #2 medical tourism destination with ISO-certified facilities' },
+    { image: valueImg, title: 'Unbeatable Value', desc: '82% lower costs than US while maintaining premium standards' },
+    { image: supportImg, title: 'US-Based Support', desc: 'Meet our team in the USA for consultations and follow-ups' },
+    { image: luxuryImg, title: 'Luxury Experience', desc: '5-star hotel and VIP transfers included in package' }
   ];
 
   return (
@@ -372,8 +376,13 @@ const EsvitaLanding = () => {
                 className={`proof-card rounded-3xl overflow-hidden transition-all duration-1000 ${isVisible['section-why'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
-                <div className="aspect-video bg-gradient-to-br from-blue-900/30 to-cyan-900/30 flex items-center justify-center border-b border-gray-800">
-                  <div className="text-7xl">{item.icon}</div>
+                <div className="aspect-video relative">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold mb-3">{item.title}</h3>
