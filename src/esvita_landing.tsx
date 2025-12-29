@@ -239,7 +239,7 @@ const EsvitaLanding = () => {
 
           {/* Right - Hero Visual */}
           <div className="order-1 lg:order-2 animate-in" style={{ animationDelay: '0.2s' }}>
-            <div className="rounded-3xl aspect-[4/3] relative group min-h-[400px] overflow-hidden bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-blue-500/20">
+            <div className="rounded-3xl aspect-[4/3] relative group overflow-hidden bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-blue-500/20 w-full">
               <iframe
                 className="absolute inset-0 w-full h-full rounded-3xl"
                 src="https://www.youtube.com/embed/2aYn_JnGY18?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1"
