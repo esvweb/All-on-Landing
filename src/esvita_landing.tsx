@@ -64,8 +64,8 @@ const EsvitaLanding = () => {
 
   const whyTurkey = [
     { image: supportImg, title: 'World-Class Quality', desc: 'Turkey is the #2 medical tourism destination with ISO-certified facilities' },
-    { image: luxuryImg, title: 'Unbeatable Value', desc: '82% lower costs than US while maintaining premium standards' },
-    { image: qualityImg, title: 'US-Based Support', desc: 'Meet our team in the USA for consultations and follow-ups' },
+    { image: qualityImg, title: 'Unbeatable Value', desc: '82% lower costs than US while maintaining premium standards' },
+    { image: luxuryImg, title: 'US-Based Support', desc: 'Meet our team in the USA for consultations and follow-ups' },
     { image: valueImg, title: 'Luxury Experience', desc: '5-star hotel and VIP transfers included in package' }
   ];
 
