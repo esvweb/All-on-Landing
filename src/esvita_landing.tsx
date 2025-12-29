@@ -4,17 +4,13 @@ import titaniumImg from './assets/titanium_denture_jean.jpg';
 import clinicImg from './assets/clinic_interior.jpg';
 
 const EsvitaLanding = () => {
-  const [scrollY, setScrollY] = useState(0);
+
   const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
 
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(

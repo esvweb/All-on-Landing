@@ -1,4 +1,4 @@
-import React from 'react';
+
 import EsvitaLanding from './esvita_landing';
 
 function App() {
