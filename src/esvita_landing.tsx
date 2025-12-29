@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, CheckCircle, Star, TrendingDown, Shield, Clock, Award, MapPin, Plane, Phone } from 'lucide-react';
-import titaniumImg from './assets/titanium_denture_jean.jpg';
+import titaniumImg from './assets/titanium.jpg';
 import clinicImg from './assets/clinic_interior.jpg';
+import usOfficeImg from './assets/us_office.jpg';
 
 const EsvitaLanding = () => {
 
@@ -187,7 +188,7 @@ const EsvitaLanding = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-12 pb-12">
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-12 pb-12 overflow-hidden">
         <div className="absolute inset-0 hero-image opacity-40" />
         <div className="absolute inset-0 bg-transparent" />
 
@@ -326,7 +327,7 @@ const EsvitaLanding = () => {
       </section>
 
       {/* Social Proof Bar */}
-      <section className="py-8 border-y border-white/10 bg-white/5 backdrop-blur-sm">
+      < section className="py-8 border-y border-white/10 bg-white/5 backdrop-blur-sm" >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center items-center gap-8 text-center">
             <div>
@@ -350,12 +351,12 @@ const EsvitaLanding = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
 
 
       {/* Why Turkey Section */}
-      <section id="section-why" className="py-16 sm:py-24 px-4 sm:px-6">
+      < section id="section-why" className="py-16 sm:py-24 px-4 sm:px-6" >
         <div className="max-w-7xl mx-auto">
           <div className={`text-center mb-12 transition-all duration-1000 ${isVisible['section-why'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-3xl sm:text-5xl font-bold mb-4">
@@ -382,67 +383,11 @@ const EsvitaLanding = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
-      {/* US Support */}
-      <section id="section-support" className="py-16 sm:py-24 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className={`gradient-border rounded-3xl p-8 sm:p-12 transition-all duration-1000 ${isVisible['section-support'] ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-6">
-                <MapPin className="w-4 h-4 text-blue-400" />
-                <span className="text-sm text-blue-300">US-Based Team</span>
-              </div>
-              <h2 className="text-3xl sm:text-5xl font-bold mb-4">
-                We're Not <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Just</span> in Turkey
-              </h2>
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto">Meet with our specialists in the United States before and after your treatment. We're here for your entire journey.</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="video-placeholder rounded-2xl aspect-video flex items-center justify-center mb-6">
-                  <div className="text-center">
-                    <MapPin className="w-16 h-16 text-blue-400 mx-auto mb-4" />
-                    <p className="text-gray-400">Our US Office Location</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 justify-center bg-blue-500/10 border border-blue-500/30 rounded-2xl p-4">
-                  <MapPin className="w-6 h-6 text-blue-400" />
-                  <div>
-                    <div className="font-bold">363 Road 40201</div>
-                    <div className="text-sm text-gray-400">111730 USA</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                {[
-                  { icon: Phone, title: 'Pre-Treatment Consultation', desc: 'Video call with our US team to plan your journey' },
-                  { icon: Plane, title: 'During Your Stay', desc: '24/7 English support throughout your 8-night treatment' },
-                  { icon: CheckCircle, title: 'US-Based Team', desc: 'Connect with our US support team anytime' }
-                ].map((item, i) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={i} className="flex items-start gap-4 bg-white/5 rounded-2xl p-6 border border-white/10">
-                      <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-blue-400" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold mb-1">{item.title}</h4>
-                        <p className="text-sm text-gray-400">{item.desc}</p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Premium Brands (Swapped) */}
-      <section id="section-brands" className="py-16 sm:py-24 px-4 sm:px-6">
+      < section id="section-brands" className="py-16 sm:py-24 px-4 sm:px-6" >
         <div className="max-w-7xl mx-auto">
           <div className={`text-center mb-12 transition-all duration-1000 ${isVisible['section-brands'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-3xl sm:text-5xl font-bold mb-4">
@@ -460,10 +405,10 @@ const EsvitaLanding = () => {
 
 
         </div>
-      </section>
+      </section >
 
       {/* Testimonials */}
-      <section id="section-testimonials" className="py-16 sm:py-24 px-4 sm:px-6">
+      < section id="section-testimonials" className="py-16 sm:py-24 px-4 sm:px-6" >
         <div className="max-w-6xl mx-auto">
           <div className={`text-center mb-12 transition-all duration-1000 ${isVisible['section-testimonials'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-3xl sm:text-5xl font-bold mb-4">
@@ -509,10 +454,10 @@ const EsvitaLanding = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Clinic Showcase (Swapped) */}
-      <section id="section-gallery" className="py-16 sm:py-24 px-4 sm:px-6">
+      < section id="section-gallery" className="py-16 sm:py-24 px-4 sm:px-6" >
         <div className="max-w-7xl mx-auto">
           <div className={`text-center mb-12 transition-all duration-1000 ${isVisible['section-gallery'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-3xl sm:text-5xl font-bold mb-4">
@@ -522,7 +467,7 @@ const EsvitaLanding = () => {
           </div>
 
           <div className={`transition-all duration-1000 ${isVisible['section-gallery'] ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-            <div className="relative rounded-3xl overflow-hidden group mb-12">
+            <div className="relative rounded-3xl overflow-hidden group mb-12 max-w-full">
               <img src={clinicImg} alt="Medical Facility" className="w-full h-auto object-cover" />
             </div>
 
@@ -546,10 +491,64 @@ const EsvitaLanding = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
+
+      {/* US Support (Relocated) */}
+      < section id="section-support" className="py-16 sm:py-24 px-4 sm:px-6" >
+        <div className="max-w-6xl mx-auto">
+          <div className={`gradient-border rounded-3xl p-8 sm:p-12 transition-all duration-1000 ${isVisible['section-support'] ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-6">
+                <MapPin className="w-4 h-4 text-blue-400" />
+                <span className="text-sm text-blue-300">US-Based Team</span>
+              </div>
+              <h2 className="text-3xl sm:text-5xl font-bold mb-4">
+                We're Not <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Just</span> in Turkey
+              </h2>
+              <p className="text-xl text-gray-400 max-w-2xl mx-auto">Meet with our specialists in the United States before and after your treatment. We're here for your entire journey.</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="rounded-2xl overflow-hidden mb-6 max-w-full relative">
+                  <img src={usOfficeImg} alt="Our US Office" className="w-full h-auto object-cover aspect-video" />
+                </div>
+                <div className="flex items-center gap-3 justify-center bg-blue-500/10 border border-blue-500/30 rounded-2xl p-4">
+                  <MapPin className="w-6 h-6 text-blue-400" />
+                  <div>
+                    <div className="font-bold">363 Road 40201</div>
+                    <div className="text-sm text-gray-400">111730 USA</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  { icon: Phone, title: 'Pre-Treatment Consultation', desc: 'Video call with our US team to plan your journey' },
+                  { icon: Plane, title: 'During Your Stay', desc: '24/7 English support throughout your 8-night treatment' },
+                  { icon: CheckCircle, title: 'US-Based Team', desc: 'Connect with our US support team anytime' }
+                ].map((item, i) => {
+                  const Icon = item.icon;
+                  return (
+                    <div key={i} className="flex items-start gap-4 bg-white/5 rounded-2xl p-6 border border-white/10">
+                      <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-6 h-6 text-blue-400" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold mb-1">{item.title}</h4>
+                        <p className="text-sm text-gray-400">{item.desc}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section >
 
       {/* Final CTA */}
-      <section id="section-cta" className="py-16 sm:py-32 px-4 sm:px-6">
+      < section id="section-cta" className="py-16 sm:py-32 px-4 sm:px-6" >
         <div className="max-w-4xl mx-auto text-center">
           <div className={`transition-all duration-1000 ${isVisible['section-cta'] ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
             <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2 mb-6 animate-pulse">
@@ -588,10 +587,10 @@ const EsvitaLanding = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-12 px-4 sm:px-6 bg-black/20 backdrop-blur-lg">
+      < footer className="border-t border-white/10 py-12 px-4 sm:px-6 bg-black/20 backdrop-blur-lg" >
         <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-2 gap-8 mb-8">
             <div>
@@ -632,55 +631,57 @@ const EsvitaLanding = () => {
             <p>© 2024 Esvita Clinic. All rights reserved. Medical tourism services provided in partnership with accredited facilities.</p>
           </div>
         </div>
-      </footer>
+      </footer >
 
       {/* Modal */}
-      {showModal && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={closeModal}>
-          <div className="bg-gray-900 rounded-3xl p-8 max-w-md w-full border border-gray-700" onClick={(e) => e.stopPropagation()}>
-            <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-bold">Get Your Free Consultation</h3>
-              <button onClick={closeModal} className="text-gray-400 hover:text-white">✕</button>
+      {
+        showModal && (
+          <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={closeModal}>
+            <div className="bg-gray-900 rounded-3xl p-8 max-w-md w-full border border-gray-700" onClick={(e) => e.stopPropagation()}>
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="text-2xl font-bold">Get Your Free Consultation</h3>
+                <button onClick={closeModal} className="text-gray-400 hover:text-white">✕</button>
+              </div>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Full Name *"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Phone Number *"
+                    required
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email (Optional)"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+                  />
+                </div>
+                <button type="submit" className="cta-button w-full text-white px-6 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-2 group">
+                  Submit
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </form>
             </div>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Full Name *"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
-                />
-              </div>
-              <div>
-                <input
-                  type="tel"
-                  placeholder="Phone Number *"
-                  required
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  placeholder="Email (Optional)"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
-                />
-              </div>
-              <button type="submit" className="cta-button w-full text-white px-6 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-2 group">
-                Submit
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </form>
           </div>
-        </div>
-      )}
-    </div>
+        )
+      }
+    </div >
   );
 };
 
